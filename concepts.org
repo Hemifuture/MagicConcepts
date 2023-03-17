@@ -1,0 +1,49 @@
+#+TITLE: White Lighter
+#+SUBTITLE: Concepts
+#+DATE: <2018-12-09 Sun>
+#+AUTHOR: dyzdyz010
+#+EMAIL: dyzdyz010@gmail.com
+
+# #############################################################################
+# Org Options
+# #############################################################################
+#+INCLUDE: "./export-options/org.org"
+
+# #############################################################################
+# HTML Options
+# #############################################################################
+#+INCLUDE: "./export-options/html.org"
+
+# #############################################################################
+# LaTeX Options
+# #############################################################################
+#+INCLUDE: "./export-options/tex.org"
+
+
+# #############################################################################
+# Main content
+# #############################################################################
+
+#+BEGIN_EXPORT latex
+\author{dyzdyz010}
+\date{\textit{2018 年 12 月 09 日}}
+\title{\sffamily \textbf{White Lighter - Concepts}}
+\maketitle
+#+END_EXPORT
+
+# #+BEGIN_abstract
+# White Lighter 项目的目的，是为 ACG 世界建立完整的魔法理论体系，并在计算机系统中实现魔法构建工具。
+# #+END_abstract
+
+#+INCLUDE: "./chapters/00-abstract.org" :lines "1-" :minlevel 1
+
+#+TOC: headlines 3
+
+# 世界基础
+#+INCLUDE: "./chapters/01-world-base.org" :lines "24-" :minlevel 1
+
+# 魔法原理
+#+INCLUDE: "./chapters/02-principles.org" :lines "24-" :minlevel 1
+
+# 要素详述
+#+INCLUDE: "./chapters/03-key-elements.org" :lines "24-" :minlevel 1
