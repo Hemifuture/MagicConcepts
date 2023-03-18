@@ -26,8 +26,11 @@
 
 #+BEGIN_EXPORT latex
 \author{dyzdyz010}
-\date{\textit{2018 年 12 月 09 日}}
-\title{\sffamily \textbf{White Lighter - Concepts}}
+\date{\textit{2022 年 10 月 17 日}}
+\title{%
+    \sffamily \textbf{魔法导论 \\
+    \large \textit{Magic Concepts}
+}}
 \maketitle
 #+END_EXPORT
 

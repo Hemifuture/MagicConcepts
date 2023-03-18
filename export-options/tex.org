@@ -1,5 +1,6 @@
 # Document class
 #+LATEX_CLASS: article
+# +LATEX_CLASS_OPTIONS: [12pt, a4paper]
 
 # Foreign encoding
 #+LaTeX_HEADER: \usepackage[AUTO]{inputenc}
@@ -72,14 +73,16 @@
 #+LATEX_HEADER: \newcommand{\sectionbreak}{\clearpage}
 
 # Line break
-#+LATEX_HEADER: \XeTeXlinebreaklocale "zh"
-#+LATEX_HEADER: \XeTeXlinebreakskip = 0pt plus 1pt
+# +LATEX_HEADER: \XeTeXlinebreaklocale "zh"
+# +LATEX_HEADER: \XeTeXlinebreakskip = 0pt plus 1pt
+
+#+LATEX_HEADER: \usepackage{fancyhdr}
 
 # Font config
-# +LATEX_HEADER: \usepackage{luatexja-fontspec}
-#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \usepackage{luatexja-fontspec}
+# +LATEX_HEADER: \usepackage{fontspec}
 # +LATEX_HEADER: \defaultfontfeatures{RawFeature={+axis={wght=400}}}
 # +LATEX_HEADER: \setmainfont[BoldFont=SourceHanSansSCVF, BoldFeatures={RawFeature={+axis={wght=500}}},]{SourceHanSansSCVF}
-#+LATEX_HEADER: \setmainfont[BoldFont=SourceHanSansSC-Bold, ItalicFont=STKaitiSC-Regular,BoldItalicFont=STKaitiSC-Bold]{SourceHanSansSC-Light}
+#+LATEX_HEADER: \setmainjfont[BoldFont=SourceHanSansSC-Bold, ItalicFont=STKaitiSC-Regular,BoldItalicFont=STKaitiSC-Bold]{SourceHanSansSC-Light}
 #+LATEX_HEADER: \setsansfont{PingFang SC}
 #+LATEX_HEADER: \setcounter{secnumdepth}{3}

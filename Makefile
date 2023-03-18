@@ -7,14 +7,14 @@ all: pdf html
 # ------------------------------------------------------------------------------
 
 build-tex-once:
-	xelatex -shell-escape -interaction nonstopmode concepts.tex
+	lualatex -shell-escape -interaction nonstopmode concepts.tex
 .PHONY: build-tex-once
 
 
 pdf: tex
-	xelatex -shell-escape -interaction nonstopmode concepts.tex 1>xelatex.log && echo "build tex 1st!"      \
-	&& xelatex -shell-escape -interaction nonstopmode concepts.tex 1>>xelatex.log  && echo "build tex 2nd!" \
-	&& xelatex -shell-escape -interaction nonstopmode concepts.tex 1>>xelatex.log && echo "done!"
+	lualatex -shell-escape -interaction nonstopmode concepts.tex 1>lualatex.log && echo "build tex 1st!"      \
+	&& lualatex -shell-escape -interaction nonstopmode concepts.tex 1>>lualatex.log  && echo "build tex 2nd!" \
+	&& lualatex -shell-escape -interaction nonstopmode concepts.tex 1>>lualatex.log && echo "done!"
 	@make clean-temp
 .PHONY: pdf
 
@@ -40,7 +40,7 @@ clean-pdf:
 clean-tex:
 	rm -rf concepts.{log,out,aux,toc,tex,tex~,fdb_latexmk,fls}
 	rm -f texput.log
-	rm -f xelatex.log
+	rm -f lualatex.log
 .PHONY: clean-tex
 
 clean-temp: clean-tex

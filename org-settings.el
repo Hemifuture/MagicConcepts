@@ -24,13 +24,13 @@
 
 ;;; Code:
 
-(setq org-latex-compiler "xelatex"
+(setq org-latex-compiler "lualatex"
       org-latex-default-packages-alist nil
       org-latex-default-table-environment "longtable"
       org-latex-pdf-process
       (quote
-       ("xelatex -shell-escape -interaction nonstopmode %f"
-        "xelatex -shell-escape -interaction nonstopmode %f"))
+       ("lualatex -shell-escape -interaction nonstopmode %f"
+        "lualatex -shell-escape -interaction nonstopmode %f"))
       org-latex-tables-booktabs t
       org-html-validation-link nil
       org-html-checkbox-type   'html
