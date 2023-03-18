@@ -1,6 +1,6 @@
 # Document class
 #+LATEX_CLASS: article
-# +LATEX_CLASS_OPTIONS: [12pt, a4paper]
+#+LATEX_CLASS_OPTIONS: [12pt, a4paper]
 
 # Foreign encoding
 #+LaTeX_HEADER: \usepackage[AUTO]{inputenc}
