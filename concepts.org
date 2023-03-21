@@ -1,5 +1,5 @@
-#+TITLE: White Lighter
-#+SUBTITLE: Concepts
+#+TITLE: 魔法原理：奇幻世界规则探究
+#+SUBTITLE: The Principles of Magic: Investigating the Rules of a Fantastical World
 #+DATE: <2018-12-09 Sun>
 #+AUTHOR: dyzdyz010
 #+EMAIL: dyzdyz010@gmail.com
@@ -25,13 +25,7 @@
 # #############################################################################
 
 #+BEGIN_EXPORT latex
-\author{dyzdyz010}
-\date{\textit{2022 年 10 月 17 日}}
-\title{%
-    \sffamily \textbf{魔法导论 \\
-    \large \textit{Magic Concepts}
-}}
-\maketitle
+\coverpage
 #+END_EXPORT
 
 # #+BEGIN_abstract
