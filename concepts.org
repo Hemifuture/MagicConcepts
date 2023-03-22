@@ -36,11 +36,17 @@
 
 #+TOC: headlines 3
 
-# 世界基础
+# 概述
 #+INCLUDE: "./chapters/01.org" :lines "24-" :minlevel 1
 
-# 魔法原理
+# 魔法要素与概念
 #+INCLUDE: "./chapters/02.org" :lines "24-" :minlevel 1
 
-# 要素详述
+# 魔法的性质与构建原则
 #+INCLUDE: "./chapters/03.org" :lines "24-" :minlevel 1
+
+# 魔法的整体设计
+#+INCLUDE: "./chapters/04.org" :lines "24-" :minlevel 1
+
+# 魔法的实际应用
+#+INCLUDE: "./chapters/05.org" :lines "24-" :minlevel 1
