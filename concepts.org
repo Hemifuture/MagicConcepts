@@ -1,5 +1,5 @@
-#+TITLE: 魔法原理：奇幻世界规则探究
-#+SUBTITLE: The Principles of Magic: Investigating the Rules of a Fantastical World
+#+TITLE: 魔法导论：现实主义视角下的奇幻世界规则探索
+#+SUBTITLE: An Introduction to Magic: Exploring the Rules of the Fantasy World through a Realistic Lens
 #+DATE: <2018-12-09 Sun>
 #+AUTHOR: dyzdyz010
 #+EMAIL: dyzdyz010@gmail.com
@@ -37,10 +37,10 @@
 #+TOC: headlines 3
 
 # 世界基础
-#+INCLUDE: "./chapters/01-world-base.org" :lines "24-" :minlevel 1
+#+INCLUDE: "./chapters/01.org" :lines "24-" :minlevel 1
 
 # 魔法原理
-#+INCLUDE: "./chapters/02-principles.org" :lines "24-" :minlevel 1
+#+INCLUDE: "./chapters/02.org" :lines "24-" :minlevel 1
 
 # 要素详述
-#+INCLUDE: "./chapters/03-key-elements.org" :lines "24-" :minlevel 1
+#+INCLUDE: "./chapters/03.org" :lines "24-" :minlevel 1

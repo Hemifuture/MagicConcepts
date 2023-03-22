@@ -47,7 +47,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
     citecolor=red
 }
@@ -60,7 +60,9 @@
 
 % Paragraph styling
 \renewcommand{\baselinestretch}{1.2}
-\usepackage[skip=10pt plus1pt, indent=0.3in]{parskip}
+% \usepackage[skip=10pt plus1pt, indent=0.3in]{parskip}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.5em}
 % \setlength{\parindent}{0.3in}
 
 % Header and footer styling
@@ -76,7 +78,7 @@
     \begin{titlepage}
         \centering
         \vspace*{\stretch{1}}
-        
+
         % {\Large\textbf{HEMIFUTURE}}\\[5cm]
         \begin{figure}[H]
             \centering
@@ -84,16 +86,26 @@
         \end{figure}
 
         \vspace*{\stretch{1}}
-        
-        {\LARGE\textbf{魔法原理：奇幻世界规则探究}}\\[1cm]
-        {\large\textbf{The Principles of Magic: \\[0.1cm]
-        Investigating the Rules of a Fantastical World}}\\[8cm]
-        
-        {\large\textit{杜艺卓}}\\[1cm]
-        % {\large\textit{您的部门或团队}}\\[2cm]
-        
-        {\large 2018 年 12 月 10 日}
-        
+
+        {\LARGE\textbf{魔法导论：\\[0.3cm]
+            现实主义视角下的奇幻世界规则探索}}\\[1cm]
+        {\large\textbf{An Introduction to Magic: \\[0.1cm]
+            Exploring the Rules of the Fantasy World through a Realistic Lens}}\\[6cm]
+
+        {\large\textit{dyzdyz010}}\\[1cm]
+        {\large\textit{Hemifuture 兴趣小组}}\\[2cm]
+
+        {\large 2023 年 3 月 23 日}
+
         \vspace*{\stretch{2}}
     \end{titlepage}
+}
+
+\def\abstract{
+    % \renewcommand{\abstractname}{\large 摘要\\}
+    \section*{\center{\large 摘要}}
+
+    \renewcommand{\baselinestretch}{1.5}
+    \setlength{\parindent}{2em}
+    \setlength{\parskip}{0.5em}
 }
