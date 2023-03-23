@@ -12,9 +12,10 @@ build-tex-once:
 
 
 pdf: tex
-	lualatex -shell-escape -interaction nonstopmode --jobname='An.Introduction.to.Magic.Hemifuture.2023' concepts.tex 1>lualatex.log && echo "build tex 1st!"      \
-	&& lualatex -shell-escape -interaction nonstopmode --jobname='An.Introduction.to.Magic.Hemifuture.2023' concepts.tex 1>>lualatex.log  && echo "build tex 2nd!" \
-	&& lualatex -shell-escape -interaction nonstopmode --jobname='An.Introduction.to.Magic.Hemifuture.2023' concepts.tex 1>>lualatex.log && echo "done!"
+	lualatex -shell-escape -interaction nonstopmode concepts.tex 1>lualatex.log && echo "build tex 1st!"      \
+	&& lualatex -shell-escape -interaction nonstopmode concepts.tex 1>>lualatex.log  && echo "build tex 2nd!" \
+	&& lualatex -shell-escape -interaction nonstopmode concepts.tex 1>>lualatex.log && echo "done!"		   \
+	&& mv concepts.pdf An.Introduction.to.Magic.Hemifuture.2023.pdf
 	@make clean-temp
 .PHONY: pdf
 
@@ -38,7 +39,7 @@ clean-pdf:
 .PHONY: clean-pdf
 
 clean-tex:
-	rm -rf *.{log,out,aux,toc,tex,tex~,fdb_latexmk,fls}
+	rm -rf *.{log,out,aux,toc,tex,tex~,fdb_latexmk,fls,synctex.gz}
 	rm -f texput.log
 	rm -f lualatex.log
 .PHONY: clean-tex
